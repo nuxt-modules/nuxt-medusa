@@ -37,21 +37,21 @@
     "stackblitz": "cd .stackblitz && yarn && yarn dev"
   },
   "dependencies": {
-    "@medusajs/js-sdk": "^2.0.1",
-    "@medusajs/types": "^2.0.1",
-    "@nuxt/kit": "^3.8.0",
-    "defu": "^6.1.2"
+    "@medusajs/js-sdk": "^2.5.1",
+    "@medusajs/types": "^2.5.1",
+    "@nuxt/kit": "^3.15.4",
+    "defu": "^6.1.4"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxt/module-builder": "^0.5.2",
-    "@nuxt/schema": "^3.8.0",
-    "@nuxt/test-utils": "^3.8.0",
+    "@nuxt/schema": "^3.15.4",
+    "@nuxt/test-utils": "^3.17.0",
     "@types/node": "^18.18.6",
     "changelogen": "^0.5.5",
     "eslint": "^8.52.0",
-    "nuxt": "^3.8.0",
+    "nuxt": "^3.15.4",
     "vitest": "^0.33.0"
   },
   "stackblitz": {
