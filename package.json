@@ -1,6 +1,6 @@
 {
   "name": "@nuxtjs/medusa",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Medusa module for Nuxt",
   "license": "MIT",
   "type": "module",
@@ -57,5 +57,6 @@
   "stackblitz": {
     "installDependencies": false,
     "startCommand": "yarn stackblitz"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }
