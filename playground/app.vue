@@ -20,20 +20,23 @@ const { data } = await useFetch('/api/products')
     <div class="flex">
       <div
         v-for="product in products"
-        :key="product.key"
+        :key="product.id"
         class="mx-2"
       >
         <div class="relative rounded-lg shadow-lg">
           <img
-            :src="product.thumbnail"
+            :src="product.thumbnail ?? ''"
             class="shadow-lg rounded-lg opacity-1 hover:opacity-75 transition duration-300 ease-in-out w-full"
           >
           <div class="p-6">
             <h5 class="font-bold text-lg mb-3">
               {{ product.title }}
             </h5>
-            <pre class="text-gray-500 mb-4">{{
-              product.variants[0].calculated_price.calculated_amount
+            <pre
+              v-if="product.variants"
+              class="text-gray-500 mb-4"
+            >{{
+              product.variants[0].calculated_price?.calculated_amount
             }}</pre>
             <p>{{ product.description }}</p>
           </div>
@@ -46,20 +49,23 @@ const { data } = await useFetch('/api/products')
     <div class="flex">
       <div
         v-for="product in data?.products"
-        :key="product.key"
+        :key="product.id"
         class="mx-2"
       >
         <div class="relative rounded-lg shadow-lg">
           <img
-            :src="product.thumbnail"
+            :src="product.thumbnail ?? ''"
             class="shadow-lg rounded-lg opacity-1 hover:opacity-75 transition duration-300 ease-in-out w-full"
           >
           <div class="p-6">
             <h5 class="font-bold text-lg mb-3">
               {{ product.title }}
             </h5>
-            <pre class="text-gray-500 mb-4">{{
-              product.variants[0].calculated_price.calculated_amount
+            <pre
+              v-if="product.variants"
+              class="text-gray-500 mb-4"
+            >{{
+              product.variants[0].calculated_price?.calculated_amount
             }}</pre>
             <p>{{ product.description }}</p>
           </div>
